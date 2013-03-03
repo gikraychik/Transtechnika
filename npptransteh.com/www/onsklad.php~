@@ -30,7 +30,7 @@ head("Товары в наличии");
 		}
 		//-->
 		</script>
-		<table cellpadding="2" cellspacing="0" border = "1" width="800px">
+		<table cellpadding="2" cellspacing="0" border = "1" width="700px">
 		<tr align = "center">
 			<td>Номер</td>
 			<td>Наименование</td>
