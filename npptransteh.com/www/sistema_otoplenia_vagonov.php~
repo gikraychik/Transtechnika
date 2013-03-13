@@ -1,6 +1,5 @@
 ﻿<?php
 include_once("Php/view.php");
-$modes = array("Система отопления вагонов на жидком топливе");
 head("Системы отопления вагонов на жидком топливе", $modes);
 ?>
 <div id="text"><div>

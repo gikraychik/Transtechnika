@@ -24,7 +24,7 @@ function head($title, $modes)
 	$text.= "<head>\n<title>".$title."</title>\n
 <meta name='Generator' content='BinN S.Builder 3.712' />\n
 <meta name='KeyWords' content='".$modes[0]."' />\n
-<meta name='Description' content='НПП \"Транстехника\" предлагает преобразователи напряжения (инверторы), источники бесперебойного питания (ups), а также системы автономного электроснабжения.' />\n
+<meta name='Description' content='НТЦ \"Транстехника\" предлагает преобразователи напряжения (инверторы), источники бесперебойного питания (ups), а также системы автономного электроснабжения.' />\n
 <meta http-equiv=\"Expires\" content=\"Mon, 26 Jul 1997 05:00:00 GMT\" />\n
 <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n
 <META http-equiv='Content-Type' content='text/html; charset=utf-8'><link rel='stylesheet' type='text/css' href='/transteh.css?=4' />\n

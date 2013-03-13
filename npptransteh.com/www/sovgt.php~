@@ -1,6 +1,5 @@
 ﻿<?php
 include_once("Php/view.php");
-$modes = array("инверторы, преобразователи напряжения, PowerPack, Freedom, Prosine");
 head("Инверторы мобильные, зарядные устройства", $modes);
 ?>
 <div id="text"><div>

@@ -1,6 +1,7 @@
 ﻿﻿<?php
 include_once("Php/view.php");
-head("Товары в наличии");
+$modes = array("");
+head("Товары в наличии", $modes);
 ?>
    <div id="text"><div>
       <table cellpadding="0" cellspacing="0" width="100%"><tr>
@@ -211,9 +212,9 @@ head("Товары в наличии");
 			<td align="center">22</td>
 			<td><div style="cursor: pointer;" onclick="my_open();"><a>Блокиратор замка двери купе</a></div></td>
 			<td>&nbsp;</td>
-			<td>1060</td>
-			<td>&nbsp;</td>
-			<td>890</td>
+			<td align = "center">1060</td>
+			<td align = "center">&nbsp;</td>
+			<td align = "center">890</td>
 		</tr>
 		</table>
 		<br>
