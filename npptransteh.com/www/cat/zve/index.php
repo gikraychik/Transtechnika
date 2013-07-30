@@ -1,6 +1,5 @@
 ﻿<?php
 include_once("../../Php/view.php");
-$modes = array("Зарядные устройства Victron Energy");
 head("Зарядные устройства Victron Energy", $modes);
 ?>
 <div id="text"><div>

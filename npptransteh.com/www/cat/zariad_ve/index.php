@@ -1,6 +1,5 @@
 ﻿<?php
 include_once("../../Php/view.php");
-$modes = array("Инверторы/зарядные устройства");
 head("Инверторы/зарядные устройства", $modes);
 ?>
 <div id="text"><div>

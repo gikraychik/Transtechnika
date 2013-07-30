@@ -10,15 +10,23 @@ head("Товары в наличии", $modes);
 		<div align = "center">
 		<script language="javascript">
 		<!--
-		function my_open()
+		function my_open(path, mode)
 		{
 			w = getClientWidth();
 			h = getClientHeight();
-			iWidth = 600;
-			iHeigth = 450;
+			if (mode == 0)
+			{
+				iWidth = 600;
+				iHeigth = 450;
+			}
+			else
+			{
+				iWidth = 450;
+				iHeigth = 450;
+			}
 			x = (w - iWidth) / 2;
 			y = (h - iHeigth) / 2;
-			var newWin = window.open("http://npptranstech.com/images/new/block.JPG", "window1", "width="+iWidth+",height="+iHeigth+",resizable=yes,scrollbars=yes,status=yes,left="+x+",top="+y);
+			var newWin = window.open("http://npptranstech.com/images/new/"+path, "window1", "width="+iWidth+",height="+iHeigth+",resizable=yes,scrollbars=yes,status=yes,left="+x+",top="+y);
 			return true;
 		}
 		function getClientWidth()
@@ -46,15 +54,15 @@ head("Товары в наличии", $modes);
 			<td>ПОБС 3МП</td>
 			<td align="center">36</td>
 			<td align="center">2009</td>
-			<td align="center">1200</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">2</td>
-			<td>Блоки конденсатор</td>
+			<td>Блоки конденсаторов</td>
 			<td>КБМШ-5</td>
 			<td align="center">9</td>
 			<td align="center">2008</td>
-			<td align="center">500</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">3</td>
@@ -62,7 +70,7 @@ head("Товары в наличии", $modes);
 			<td>БКР-76</td>
 			<td align="center">16</td>
 			<td align="center">2007</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">4</td>
@@ -70,7 +78,7 @@ head("Товары в наличии", $modes);
 			<td>БПШ</td>
 			<td align="center">13</td>
 			<td align="center">2008</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">5</td>
@@ -78,7 +86,7 @@ head("Товары в наличии", $modes);
 			<td>НМШ 2-900</td>
 			<td align="center">2</td>
 			<td align="center">2009</td>
-			<td align="center">850</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">6</td>
@@ -86,7 +94,7 @@ head("Товары в наличии", $modes);
 			<td>Д 3-3,5</td>
 			<td align="center">10</td>
 			<td align="center">2009</td>
-			<td align="center">1500</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">7</td>
@@ -94,7 +102,7 @@ head("Товары в наличии", $modes);
 			<td>Д 3-2700</td>
 			<td align="center">10</td>
 			<td align="center">2009</td>
-			<td align="center">1500</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">8</td>
@@ -102,7 +110,7 @@ head("Товары в наличии", $modes);
 			<td>НМШ1-560</td>
 			<td align="center">6</td>
 			<td align="center">2009</td>
-			<td align="center">1200</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">9</td>
@@ -110,7 +118,7 @@ head("Товары в наличии", $modes);
 			<td>ПЛЗУ 73/1000</td>
 			<td align="center">12</td>
 			<td align="center">2009</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">10</td>
@@ -118,7 +126,7 @@ head("Товары в наличии", $modes);
 			<td>ФК 75</td>
 			<td align="center">18</td>
 			<td align="center">2009</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">11</td>
@@ -126,7 +134,7 @@ head("Товары в наличии", $modes);
 			<td>ПЛЗМУ 40-2200</td>
 			<td align="center">36</td>
 			<td align="center">2009</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">12</td>
@@ -134,7 +142,7 @@ head("Товары в наличии", $modes);
 			<td>РЭЛ 1-400</td>
 			<td align="center">4</td>
 			<td align="center">2009</td>
-			<td align="center">600</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">13</td>
@@ -142,7 +150,7 @@ head("Товары в наличии", $modes);
 			<td>БК 75</td>
 			<td align="center">16</td>
 			<td align="center">2009</td>
-			<td align="center">1800</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">14</td>
@@ -154,11 +162,11 @@ head("Товары в наличии", $modes);
 		</tr>
 		<tr>
 			<td align="center">15</td>
-			<td>Стэнд проверочный</td>
+			<td>Стенд проверочный</td>
 			<td>СПУПРМ</td>
 			<td align="center">1</td>
 			<td align="center">2007</td>
-			<td align="center">30000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">16</td>
@@ -166,7 +174,7 @@ head("Товары в наличии", $modes);
 			<td>3Б ДСШ</td>
 			<td align="center">20</td>
 			<td align="center">2007</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">17</td>
@@ -182,7 +190,7 @@ head("Товары в наличии", $modes);
 			<td>ОЛ 2-88</td>  <!--here is the problem; old version ОЛ 28-->
 			<td align="center">14</td>
 			<td align="center">2009</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">19</td>
@@ -190,7 +198,7 @@ head("Товары в наличии", $modes);
 			<td>РОБС 3М</td>
 			<td align="center">19</td>
 			<td align="center">2008</td>
-			<td align="center">1000</td>
+			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">20</td>
@@ -202,7 +210,7 @@ head("Товары в наличии", $modes);
 		</tr>
 		<tr>
 			<td align="center">21</td>
-			<td>Тональный звонок </td>
+			<td><div style="cursor: pointer;" onclick="my_open('bell.png', 1);"><a>Тональный звонок</a></div></td>
 			<td>ТВУ-60</td>
 			<td align="center">300</td>
 			<td align="center">2008, 2009</td>
@@ -210,7 +218,7 @@ head("Товары в наличии", $modes);
 		</tr>
 		<tr>
 			<td align="center">22</td>
-			<td><div style="cursor: pointer;" onclick="my_open();"><a>Блокиратор замка двери купе</a></div></td>
+			<td><div style="cursor: pointer;" onclick="my_open('block.JPG', 0);"><a>Блокиратор замка двери купе</a></div></td>
 			<td>&nbsp;</td>
 			<td align = "center">1060</td>
 			<td align = "center">&nbsp;</td>
