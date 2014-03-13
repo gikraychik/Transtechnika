@@ -1,4 +1,4 @@
-﻿﻿<?php
+<?php
 include_once("Php/view.php");
 $modes = array("");
 head("Товары в наличии", $modes);
@@ -19,7 +19,7 @@ head("Товары в наличии", $modes);
 				iWidth = 600;
 				iHeigth = 450;
 			}
-			else
+			else if (mode == 1)
 			{
 				iWidth = 450;
 				iHeigth = 450;
@@ -223,6 +223,14 @@ head("Товары в наличии", $modes);
 			<td align = "center">1060</td>
 			<td align = "center">&nbsp;</td>
 			<td align = "center">890</td>
+		</tr>
+		<tr>
+			<td align="center">23</td>
+			<td><a href="view.php" target="_blank">Багажный вагон без внутренней отделки (новый)</a></td>
+			<td>61-531</td>
+			<td align="center"></td>
+			<td align="center">2013</td>
+			<td align="center">12 500 000</td>
 		</tr>
 		</table>
 		<br>
